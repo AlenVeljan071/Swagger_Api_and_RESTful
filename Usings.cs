@@ -1,0 +1,13 @@
+﻿global using Microsoft.AspNetCore.Mvc;
+global using Microsoft.EntityFrameworkCore;
+global using Swagger_Api_and_RESTful.Data;
+global using Swagger_Api_and_RESTful.Extensions;
+global using Swagger_Api_and_RESTful.Models;
+global using Swagger_Api_and_RESTful.Repository;
+global using Swagger_Api_and_RESTful.Request_Model;
+global using Swagger_Api_and_RESTful.Response_Model;
+global using System;
+global using System.Collections.Generic;
+global using System.ComponentModel.DataAnnotations;
+global using System.Linq;
+global using System.Threading.Tasks;
