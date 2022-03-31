@@ -4,7 +4,7 @@
     {
         Task<IEnumerable<Group>> GetGroupsAsync();
         Task<Group> GetGroupAsync(string id);
-        Task<Group> PostGroupAsync(Group_Request_Model song);
+        Task<Group> PostGroupAsync(Group_Request_Model group);
         Task<Group> PutGroupAsync(string id, Group_Request_Model group);
         Task<bool> DeleteGroupAsync(string id);
     }

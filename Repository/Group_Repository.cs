@@ -34,12 +34,12 @@
             return group;
         }
 
-        public async Task<Group> PostGroupAsync(Group_Request_Model song)
+        public async Task<Group> PostGroupAsync(Group_Request_Model group)
         {
             var dbGroup = new Group()
             {
                 GroupId = Guid.NewGuid().ToString(),
-                Name = song.Name,
+                Name = group.Name,
                 CreatedDate = DateTime.UtcNow
             };
             _context.Groups.Add(dbGroup);
