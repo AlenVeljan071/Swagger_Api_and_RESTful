@@ -13,9 +13,9 @@
 
         //GET: api/Groups
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<User>>> GetUsers()
+        public ActionResult<IEnumerable<User_Response_Model>> GetUsers()
         {
-            return Ok(await _repository.GetUsersAsync());
+           return _repository.GetUsersAsync().Result.Select(x=>x.UserResponse()).ToList();
         }
 
         //GET: api/Groups/5
